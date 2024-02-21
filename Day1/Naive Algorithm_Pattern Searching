@@ -1,0 +1,18 @@
+//time complexity = 0(M*N)
+class Main {
+    public static void main(String[] args) {
+    String text = "PRITHPRIK";
+    String pat = "PRI";
+    int l1 = text.length();
+    int l2 = pat.length();
+    int i,j=l2-1;
+    for(i=0,j=l2-1;j<l1;){
+        if(pat.equals(text.substring(i,j+1))){
+        System.out.println(i);
+            
+        }
+        i++;
+        j++;
+    }
+    }
+}
